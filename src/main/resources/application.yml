@@ -1,0 +1,18 @@
+micronaut:
+  server:
+    port: 8080
+  application:
+    name: demo
+  metrics:
+    enabled: true
+    binders:
+      web:
+        enabled: true
+    export:
+      console:
+        enabled: true
+  http:
+    services:
+      otherapp:
+        urls:
+          - http://localhost:8080
